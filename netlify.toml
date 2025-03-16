@@ -12,10 +12,6 @@
   # Node.js version (use a compatible version for Next.js)
   NODE_VERSION = "18"
 
-[[plugins]]
-  # Netlify plugin for Next.js (optional but recommended)
-  package = "@netlify/plugin-nextjs"
-
 [context.production.environment]
   # Environment variables for production
   NEXT_PUBLIC_SUPABASE_URL = "https://vzvogrgufnkcjsobczpn.supabase.co"
