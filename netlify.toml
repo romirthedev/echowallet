@@ -1,5 +1,5 @@
 [build]
-  # Base directory (if your frontend code is in a subfolder like `frontend`)
+  # Base directory (since your Next.js app is in the `frontend` folder)
   base = "frontend"
 
   # Build command for Next.js
