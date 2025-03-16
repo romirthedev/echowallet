@@ -1,0 +1,27 @@
+[build]
+  # Base directory (if your frontend code is in a subfolder like `frontend`)
+  base = "frontend"
+
+  # Build command for Next.js
+  command = "npm run build"
+
+  # Publish directory (Next.js output folder)
+  publish = "frontend/.next"
+
+[build.environment]
+  # Node.js version (use a compatible version for Next.js)
+  NODE_VERSION = "18"
+
+[[plugins]]
+  # Netlify plugin for Next.js (optional but recommended)
+  package = "@netlify/plugin-nextjs"
+
+[context.production.environment]
+  # Environment variables for production
+  NEXT_PUBLIC_SUPABASE_URL = "https://vzvogrgufnkcjsobczpn.supabase.co"
+  NEXT_PUBLIC_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ6dm9ncmd1Zm5rY2pzb2JjenBuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDIxMDYyMDcsImV4cCI6MjA1NzY4MjIwN30.zRDhCkh3xdT6g6o_hWBdKtn7XXU-a4-hmY60b_6h1RQ"
+
+[context.deploy-preview.environment]
+  # Environment variables for deploy previews (optional)
+  NEXT_PUBLIC_SUPABASE_URL = "https://vzvogrgufnkcjsobczpn.supabase.co"
+  NEXT_PUBLIC_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZ6dm9ncmd1Zm5rY2pzb2JjenBuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDIxMDYyMDcsImV4cCI6MjA1NzY4MjIwN30.zRDhCkh3xdT6g6o_hWBdKtn7XXU-a4-hmY60b_6h1RQ"
