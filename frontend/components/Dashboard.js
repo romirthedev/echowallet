@@ -21,7 +21,7 @@ export default function Dashboard({ transactions }) {
         </div>
         <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow">
           <h2 className="text-lg font-semibold">Insights</h2>
-          <p className="mt-2">Behavioral insights coming soon!</p>
+          <p className="mt-2">Add AI insights later!</p>
         </div>
       </div>
     </div>
